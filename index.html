@@ -1,0 +1,56 @@
+<!DOCTYPE html><!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="UTF-8">  <title>Full Of Windows</title>
+  <meta name="description" content="HTML5 Canvas window management library">
+  <meta name="author" content="David Jensen">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="/js/libs/modernizr-2.0.6.min.js"></script>
+  
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
+
+  <!-- THIS IS THE CONTENT -->
+
+  <div id="container">
+    <div id="main" role="main">
+      <div id="canvas_container">
+          <canvas id="canvasOne">
+            Your browser does not support HTML5 Canvas.
+          </canvas>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="/js/libs/jquery-1.6.2.min.js"></script>
+  <script type="text/javascript" src="/js/libs/jquery.mousewheel.js"></script>
+  <script src="/js/libs/jquery.cookie.js"></script>
+  
+  <script defer src="/js/libs/plugins.js"></script>
+
+  <!-- require loads up the application -->
+  <script data-main="/js/bootstrap" src="/js/libs/require.js"></script> 
+
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>
